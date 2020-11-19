@@ -102,3 +102,6 @@ dist
 
 # TernJS port file
 .tern-port
+
+# a file I update to play around with concepts, isn't part of the site/app
+scratchpad.html
