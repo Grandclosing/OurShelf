@@ -1,0 +1,26 @@
+{
+  "name": "ourshelf",
+  "version": "1.0.0",
+  "description": "A social marketplace fighting to empower black communities.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Grandclosing/OurShelf.git"
+  },
+  "keywords": [
+    "Social",
+    "marketplace",
+    "black",
+    "lives",
+    "matter"
+  ],
+  "author": "Vuk Petrovic",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Grandclosing/OurShelf/issues"
+  },
+  "homepage": "https://github.com/Grandclosing/OurShelf#readme"
+}
