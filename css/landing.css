@@ -1,0 +1,88 @@
+
+.landing-view {
+    height: calc(100vh - 90px);
+}
+
+.landing-view__img-container {
+    position: relative;
+    background-color: transparent;
+}
+
+.landing-view__img-container:before {
+    content: "";
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: calc(100vh - 90px);
+    clip-path: polygon(0% 0%, 100% 885px, 100% 100%, 0% 100%);
+
+    background-color: var(--current-foreground);
+}
+
+.landing-view__img {
+    position: relative;
+    z-index: 1;
+    width: 600px;
+    left: 10vw;
+    top: 170px;
+}
+
+.landing-view__title {
+    font-family: var(--heading-font);
+    position: absolute;
+    z-index: 10;
+    top: 27%;
+    right: 20%;
+    font-size: 2.5em;
+    color: var(--current-foreground);
+}
+
+.landing-view__subtitle {
+    font-family: var(--body-font);
+    position: absolute;
+    z-index: 10;
+    top: 33%;
+    right: 20%;
+    font-size: 1.5em;
+    width: 500px;
+    color: var(--primary);
+    text-align: right;
+}
+
+.landing-view__button {
+    position: absolute;
+    right: 20%;
+    top: 42%;
+}
+
+.landing-view__down-arrow {
+    animation-name: slow-bounce;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+
+    border: solid var(--current-background);
+    border-width: 0 6px 6px 0;
+    display: inline-block;
+    padding: 8px;
+    transform: translateX(50%) rotate(45deg);
+    position: absolute;
+    bottom: 75px;
+
+    right: 50%;
+
+    transition: filter 0.2s ease;
+}
+
+.landing-view__down-arrow:hover {
+    filter: brightness(1.2) blur(1px);
+}
+
+.landing-view__down-arrow:active {
+    filter: brightness(0.8);
+}
+
+@keyframes slow-bounce {
+    0% { bottom: 80px; }
+    50% { bottom: 75px; }
+    100% { bottom: 80px; }
+}

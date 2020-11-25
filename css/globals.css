@@ -1,17 +1,57 @@
 
 :root {
     /* the current background color; this changes via js */
-    --current-background: #f2f2f2;
+    --current-background: #e4e4e4;
     --current-foreground: #464159;
      
-    --background-light: #f2f2f2;
+    --background-light: #e4e4e4;
     --background-dark: #464159;
 
+    --light: #e4e4e4;
     --highlight: #C7F0DB;
     --primary: #8BBABB;
     --accent: #6C7B95;
+    --dark: #464159;
+
+    --heading-font: 'Cardo', serif;
+    --body-font: 'Josefin Sans', sans-serif;
 }
 
 body {
     background-color: var(--current-background);
+    font-family: var(--body-font);
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* global site-specific styling */
+
+.page {
+    /* width: 100vw; */
+    height: 100vh;
+}
+
+.button {
+    color: var(--current-background);
+    background-color: var(--current-foreground);
+    padding: 5px 15px;
+    border-radius: 3px;
+
+    transition: filter 0.2s ease;
+}
+
+.button:hover {
+    filter: brightness(1.1);
+}
+
+.button:active {
+    filter: brightness(0.8);
 }

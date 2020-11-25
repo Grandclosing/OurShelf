@@ -30,3 +30,11 @@ Given these parameters, I decided it made sense to work on something that was su
 I used [GraphicSprings](https://www.graphicsprings.com/) to generate and modify a logo I could work with:
 
 ![Logo](/img/logo-vertical.png)
+
+---
+
+## Progress
+
+### Landing Page
+
+![Landing Page Desktop](/screenshots/landing_page.png)

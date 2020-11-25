@@ -12,16 +12,59 @@
         <link rel="stylesheet" href="css/globals.css">
 
         <link rel="stylesheet" href="css/header.css">
+        <link rel="stylesheet" href="css/landing.css">
 
         <script src="js/themer.js"></script>
     </head>
     <body>
-        <header>
-            <img src="img/logo-icon.png">
+        <header class="site-header">
+            <div class="logo site-header__logo">
+                <img src="img/logo-icon.png" alt="OurShelf Logo" class="logo__img">
 
-            <nav class="desktop-nav">
-                <!-- todo - continue working on this; look into BEM CSS -->
+                <h1 class="logo__text">urShelf</h1>
+            </div>
+            
+            <nav class="site-header__nav site-header__nav--desktop">
+                <ul class="nav-list">
+                    <li class="nav-list__item">
+                        <a href="#" class="nav-list__link">Home</a>
+                    </li>
+                    <li class="nav-list__item">
+                        <a href="#" class="nav-list__link">For Shoppers</a>
+                    </li>
+                    <li class="nav-list__item">
+                        <a href="#" class="nav-list__link">For Business Owners</a>
+                    </li>
+                    <li class="nav-list__item">
+                        <div class="nav-list__vertical-break"></div>
+                    </li>
+                    <li class="nav-list__item">
+                        <a href="#" class="nav-list__link">Sign In</a>
+                    </li>
+                    <li class="nav-list__item">
+                        <a href="#" class="nav-list__link nav-list__link--button button">Sign up for free</a>
+                    </li>
+                </ul>
             </nav>
+
+            <!-- To-do implement mobile-friendly nav -->
         </header>
+
+        <main>
+            <section class="page landing-view">
+                <div class="landing-view__img-container">
+                    <img class="landing-view__img" 
+                    alt="A black man and woman sitting at a coffee shop together"
+                    src="img/coffee shop.png">
+                </div>
+
+                <h1 class="landing-view__title">Connect with like-minded shoppers</h1>
+                <p class="landing-view__subtitle">Support black business owners and black-affirming organizations</p>
+
+                <a href="#" class="landing-view__button button">Sign up for free</a>
+
+                <a href="#" class="landing-view__down-arrow"></a>
+            </section>
+        </main>
     </body>
 </html>
