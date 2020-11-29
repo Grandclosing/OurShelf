@@ -38,3 +38,7 @@ I used [GraphicSprings](https://www.graphicsprings.com/) to generate and modify 
 ### Landing Page
 
 ![Landing Page Desktop](/screenshots/landing_page.png)
+
+### 'For Customers' Page
+
+![Customer Page Desktop](/screenshots/customers_page.png)
