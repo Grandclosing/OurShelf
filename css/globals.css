@@ -34,9 +34,17 @@ a {
 
 /* global site-specific styling */
 
+.page-content-container {
+    scroll-snap-type: y mandatory;
+    overflow-y: scroll;
+    height: calc(100vh - 90px);
+}
+
 .page {
     /* width: 100vw; */
-    height: 100vh;
+    height: calc(100vh - 90px);
+
+    scroll-snap-align: start;
 }
 
 .button {
