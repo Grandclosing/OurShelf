@@ -39,6 +39,14 @@ I used [GraphicSprings](https://www.graphicsprings.com/) to generate and modify 
 
 ![Landing Page Desktop](/screenshots/landing_page.png)
 
-### 'For Customers' Page
+### 'For Shoppers' Page
 
 ![Customer Page Desktop](/screenshots/customers_page.png)
+
+### 'For Business Owners' Page
+
+![Business Owner Page Desktop](/screenshots/businesses_page.png)
+
+### Footer 
+
+![Footer](/screenshots/footer_page.png)
