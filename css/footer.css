@@ -1,0 +1,120 @@
+
+.footer-view {
+    height: fit-content;
+}
+
+.footer-view__signup-container {
+    display: block;
+
+    width: 60%;
+    margin: 0 auto;
+
+    text-align: center;
+    background-color: var(--current-background-darker);
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+
+    border-top: 8px solid var(--current-foreground);
+    margin-top: 20vh;
+
+    padding: 55px 0px;
+    position: relative;
+    z-index: 10;
+}
+
+.footer-view__call-to-action {
+    font-family: var(--heading-font);
+    color: var(--accent);
+    font-size: 1.8em;
+    font-weight: bold;
+    margin-bottom: 35px;
+}
+
+.footer-view__button {
+    padding: 10px 30px;
+    margin: 0px 10px;
+    border-radius: 5px;
+    font-family: var(--body-font);
+    font-weight: bold;
+}
+
+.footer-view__button:hover {
+    filter: brightness(1.1);
+}
+
+.footer-view__button:active {
+    filter: brightness(0.8);
+}
+
+.footer-view__button--primary {
+    background-color: var(--current-foreground);
+    color: var(--current-background);
+    border: 2px solid var(--current-foreground);
+}
+
+.footer-view__button--secondary {
+    color: var(--current-foreground);
+    border: 2px solid var(--current-foreground);
+}
+
+.footer-view__social-media-container {
+    display: grid;
+    grid-template-columns: repeat(4, 35px);
+    column-gap: 15px;
+    width: fit-content;
+    margin: 0 auto;
+    margin-top: 50px;
+}
+
+.footer-view__social-media-icon {
+    width: 30px;
+    text-align: center;
+    cursor: pointer;
+
+    transition: filter 0.2s ease;
+}
+
+.footer-view__social-media-icon:hover {
+    filter: brightness(1.1);
+}
+
+.footer-view__social-media-icon:active {
+    filter: brightness(0.8);
+}
+
+.footer-view__footer-body {
+    background-color: var(--current-foreground);
+    width: 100%;   
+
+    padding-top: 150px;
+    padding-bottom: 20px;
+    margin-top: -120px;
+    position: relative;
+    z-index: 1;
+}
+
+.footer-grid-container {
+    display: grid;
+    width: 50%;
+    margin: 0 auto;
+
+    grid-template-columns: repeat(5, 1fr);
+}
+
+.footer-grid-container__item {
+    color: var(--current-background);
+    filter: brightness(0.8);
+    text-align: center;
+}
+
+.footer-grid-container__item:hover {
+    filter: brightness(1.0);
+}
+
+.footer-view__copyright-text {
+    text-align: center;
+    color: var(--current-background);
+    background-color: var(--current-foreground);
+    font-size: 0.8em;
+    padding: 10px 0px;
+}

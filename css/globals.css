@@ -2,7 +2,9 @@
 :root {
     /* the current background color; this changes via js */
     --current-background: #e4e4e4;
+    --current-background-darker: #ebebeb;
     --current-foreground: #464159;
+    --current-foreground-darker: #363245;
      
     --background-light: #e4e4e4;
     --background-dark: #464159;
