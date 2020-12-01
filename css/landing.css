@@ -1,6 +1,6 @@
 
 .landing-view {
-    height: calc(100vh - 90px);
+    height: calc(100vh - 91px);
     position: relative;
 }
 
@@ -14,7 +14,7 @@
     position: absolute;
     left: 0;
     width: 100%;
-    height: calc(100vh - 90px);
+    height: calc(100vh - 91px);
     clip-path: polygon(0% 0%, 100% 885px, 100% 100%, 0% 100%);
 
     background-color: var(--current-foreground);

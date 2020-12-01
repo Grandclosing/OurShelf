@@ -14,6 +14,7 @@
         <link rel="stylesheet" href="css/header.css">
         <link rel="stylesheet" href="css/landing.css">
         <link rel="stylesheet" href="css/customers.css">
+        <link rel="stylesheet" href="css/businesses.css">
         <link rel="stylesheet" href="css/parallax.css">
 
         <script src="js/themer.js"></script>
@@ -21,7 +22,7 @@
     </head>
     <body>
         <header class="site-header">
-            <div class="logo site-header__logo">
+            <div class="logo site-header__logo" onClick="scrollToElement(0)">
                 <img src="img/logo-icon.png" alt="OurShelf Logo" class="logo__img">
 
                 <h1 class="logo__text">urShelf</h1>
@@ -30,13 +31,16 @@
             <nav class="site-header__nav site-header__nav--desktop">
                 <ul class="nav-list">
                     <li class="nav-list__item">
-                        <a href="#" class="nav-list__link">Home</a>
+                        <a onClick="scrollToElement(0)" class="nav-list__link">Home</a>
                     </li>
                     <li class="nav-list__item">
-                        <a href="#" class="nav-list__link">For Shoppers</a>
+                        <a onClick="scrollToElement(1)" class="nav-list__link">For Shoppers</a>
                     </li>
                     <li class="nav-list__item">
-                        <a href="#" class="nav-list__link">For Business Owners</a>
+                        <a onClick="scrollToElement(2)" class="nav-list__link">For Business Owners</a>
+                    </li>
+                    <li class="nav-list__item">
+                        <a onClick="scrollToElement(3)" class="nav-list__link">Blog</a>
                     </li>
                     <li class="nav-list__item">
                         <div class="nav-list__vertical-break"></div>
@@ -103,9 +107,46 @@
                 </div>
             </section>
 
-            <!-- <section class="page parallax-container parallax-container-1">
-                <h2 class="parallax-container__title">"OurShelf brought our community together."</h2> 
-            </section> -->
+            <section class="page businesses-view">
+                <div class="businesses-view__section businesses-description">
+                    <h2 class="businesses-description__title">Business Owners</h2>
+
+                    <p class="businesses-description__body">
+                        Many companies look to differentiate themselves to prospect employees and customers - 
+                        taking a stand on the right side of issues is a way to do just that. In fact, doing a quick 
+                        Google search shows many <a class="businesses-description__link" href="https://www.forbes.com/sites/isabeltogoh/2020/06/01/corporate-donations-tracker-here-are-the-companies-giving-millions-to-anti-racism-efforts/?sh=19a7398737dc" rel="noopener" target="_blank">lists&nbsp;and&nbsp;articles</a> already highlighting businesses that engage in activism and community improvement efforts.</p> 
+                    </p>
+
+                    <p class="businesses-description__body">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam ullamcorper faucibus purus eu semper. Praesent diam magna, cursus scelerisque libero ut, ultricies congue magna. Aenean nulla elit, congue placerat orci a, ullamcorper facilisis nisi. Phasellus elementum arcu nunc, sit amet maximus dui interdum vel. Nulla facilisi. Sed eget sagittis nunc. Nunc sed mauris sed quam eleifend molestie. Maecenas facilisis dolor a augue tincidunt, vel pharetra elit elementum. Suspendisse rhoncus ut tellus ac hendrerit. Sed bibendum orci in lectus tincidunt imperdiet. Duis fringilla ipsum magna, ut convallis lectus semper quis. Maecenas ante libero, lobortis vel neque sed, laoreet blandit libero. Mauris efficitur tincidunt lacus ut tristique. Sed id neque dui. Nam facilisis, erat sit amet pellentesque laoreet, velit est fermentum ipsum, id finibus ligula turpis varius nunc. In hac habitasse platea dictumst.
+                    </p>
+
+                    <p class="businesses-description__body businesses-description__divider">...</p>
+
+                    <p class="businesses-description__body">
+                        Quisque vulputate maximus risus eu auctor. Vestibulum at scelerisque lectus. Sed quam orci, gravida ut gravida eu, dignissim sed leo. Suspendisse nec nunc accumsan, dignissim nibh id, finibus turpis. Nam pretium magna in eleifend auctor. Pellentesque diam nulla, pretium in laoreet sit amet, condimentum id neque. Aliquam consectetur orci tellus, ac finibus velit efficitur tincidunt. Etiam bibendum bibendum lorem, non gravida nisl malesuada id. Fusce vel suscipit erat, eu rhoncus ipsum.
+                    </p>
+
+                    <p class="businesses-description__body">
+                        Curabitur et ornare orci. Cras iaculis, nulla non tristique varius, justo lacus blandit sapien, vitae lobortis urna enim non lorem. In suscipit dolor neque, ut auctor sem pretium sit amet. Quisque porttitor sed lectus ut placerat. Pellentesque ut pretium turpis. In hac habitasse platea dictumst. Morbi ornare gravida faucibus.
+                    </p>
+
+                    <a href="#" class="businesses-description__button button">Sign up as a business owner</a>    
+                </div>
+                <div class="businesses-view__section businesses-art">
+                    <div class="businesses-art__art-container">
+                        <img alt="Black people holding hands in solidarity" 
+                             class="businesses-art__image"
+                             src="img/solidarity.png">
+                    </div>
+                </div>
+            </section>
+
+            <section class="page blog-view">
+                
+            </section>
         </main>
+
+        
     </body>
 </html>

@@ -37,12 +37,12 @@ a {
 .page-content-container {
     scroll-snap-type: y mandatory;
     overflow-y: scroll;
-    height: calc(100vh - 90px);
+    height: calc(100vh - 91px);
 }
 
 .page {
     /* width: 100vw; */
-    height: calc(100vh - 90px);
+    height: calc(100vh - 91px);
 
     scroll-snap-align: start;
 }

@@ -19,7 +19,7 @@
 .customers-view__shape-container {
     position: relative;
     background-color: transparent;
-    height: calc(100vh - 90px);
+    height: calc(100vh - 91px);
 }
 
 .customers-view__shape-container:before {

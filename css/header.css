@@ -6,7 +6,7 @@
     align-items: center;
     width: 75%;
     margin: 0 auto;
-    padding-top: 15px;
+    padding: 12px 0px;
 }
 
 /* site-wide logo styles */
@@ -16,10 +16,12 @@
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
+    user-select: none;
+    cursor: pointer;
 }
 
 .logo__img {
-    width: 80px;
+    width: 65px;
 }
 
 .logo__text {
@@ -46,6 +48,7 @@
     color: var(--accent);
     font-weight: bold;
     position: relative;
+    cursor: pointer;
 }
 
 .nav-list__link:before {
