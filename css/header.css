@@ -36,6 +36,10 @@
     font-family: var(--heading-font);
 }
 
+.hamburger {
+    display: none;
+}
+
 .nav-list {
     display: flex;
     flex-direction: row;
@@ -76,4 +80,99 @@
 
 .nav-list__link--button {
     color: var(--current-background);
+}
+
+/* responsive styles */
+
+@media (max-width: 1100px) {
+    .site-header {
+        width: 90%;
+    }
+}
+
+@media (max-width: 950px) {
+    .site-header {
+        width: 95%;
+    }
+
+    .logo__img {
+        width: 45px;
+    }
+
+    .logo__text {
+        font-size: 2.2em;
+    }
+}
+
+@media (min-width: 850px) {
+    /* in case the user toggles 'off' the responsive menu, then makes the browser window bigger */
+    .site-header__nav {
+        display: block !important;
+    }
+}
+
+@media (max-width: 850px) {
+    .site-header {
+        width: calc(100% - 30px);
+        padding: 12px 15px;
+    }
+
+    .site-header__nav {
+        display: none;
+        position: fixed;
+        top: 85px;
+        left: 0;
+        width: 100%;
+        z-index: 30;
+    }
+
+    .hamburger {
+        display: block;
+    }
+
+    .nav-list {
+        flex-direction: column;
+    }
+
+    .nav-list__item {
+        width: 100%;
+        text-align: center;
+        cursor: pointer;
+
+        background-color: var(--current-background);
+        transition: filter 0.3s ease;
+    }
+
+    .nav-list__item:hover {
+        filter: brightness(0.9);
+    }
+
+    .nav-list__link {
+        display: block;
+        padding: 15px 0px;
+    }
+
+    .break {
+        display: none;
+    }
+
+    .nav-signup:hover {
+        filter: brightness(1.1);
+    }
+}
+
+@media (max-width: 300px) {
+    /* Galaxy Fold */
+    .site-header {
+        width: calc(100% - 10px);
+        padding: 12px 5px;
+    }
+
+    .logo__text {
+        font-size: 2em;
+    }
+
+    .logo__img {
+        width: 40px;
+    }
 }

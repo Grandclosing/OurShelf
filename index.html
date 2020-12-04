@@ -11,13 +11,15 @@
         <link rel="stylesheet" href="css/reset.css">
         <link rel="stylesheet" href="css/globals.css">
 
+        <link rel="stylesheet" href="css/hamburgers.css">
+
         <link rel="stylesheet" href="css/header.css">
         <link rel="stylesheet" href="css/landing.css">
         <link rel="stylesheet" href="css/customers.css">
         <link rel="stylesheet" href="css/businesses.css">
         <link rel="stylesheet" href="css/footer.css">
 
-        <script src="js/themer.js"></script>
+        <script src="js/nav.js"></script>
         <script src="js/scroller.js"></script>
     </head>
     <body>
@@ -27,8 +29,14 @@
 
                 <h1 class="logo__text">urShelf</h1>
             </div>
+
+            <div onclick="toggleHamburger(this)" class="hamburger hamburger--squeeze" type="button">
+                <span class="hamburger-box">
+                    <span class="hamburger-inner"></span>
+                </span>
+            </div>
             
-            <nav class="site-header__nav site-header__nav--desktop">
+            <nav class="site-header__nav js-nav-toggle">
                 <ul class="nav-list">
                     <li class="nav-list__item">
                         <a onClick="scrollToElement(0)" class="nav-list__link">Home</a>
@@ -42,29 +50,21 @@
                     <li class="nav-list__item">
                         <a onClick="scrollToElement(3)" class="nav-list__link">Blog</a>
                     </li>
-                    <li class="nav-list__item">
+                    <li class="nav-list__item break">
                         <div class="nav-list__vertical-break"></div>
                     </li>
                     <li class="nav-list__item">
                         <a href="#" class="nav-list__link">Sign In</a>
                     </li>
-                    <li class="nav-list__item">
+                    <li class="nav-list__item nav-signup">
                         <a href="#" class="nav-list__link nav-list__link--button button">Sign up for free</a>
                     </li>
                 </ul>
             </nav>
-
-            <!-- To-do implement mobile-friendly nav -->
         </header>
 
         <main class="page-content-container">
             <section class="page landing-view">
-                <div class="landing-view__img-container">
-                    <img class="landing-view__img" 
-                    alt="A black man and woman sitting at a coffee shop together"
-                    src="img/coffee shop.png">
-                </div>
-
                 <div class="landing-view__text-container text-container">
                     <h1 class="text-container__title">Connect with like-minded shoppers</h1>
 
@@ -73,6 +73,12 @@
                     </div>
                     
                     <a href="#" class="text-container__button button">Sign up for free</a>    
+                </div>
+
+                <div class="landing-view__img-container">
+                    <img class="landing-view__img" 
+                    alt="A black man and woman sitting at a coffee shop together"
+                    src="img/coffee shop.png">
                 </div>
 
                 <a onClick="scrollToElement(1)" class="landing-view__down-arrow"></a>

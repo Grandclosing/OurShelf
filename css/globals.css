@@ -17,6 +17,8 @@
 
     --heading-font: 'Cardo', serif;
     --body-font: 'Josefin Sans', sans-serif;
+
+    --header-height: 91px;
 }
 
 body {
@@ -39,12 +41,12 @@ a {
 .page-content-container {
     scroll-snap-type: y mandatory;
     overflow-y: scroll;
-    height: calc(100vh - 91px);
+    height: calc(100vh - var(--header-height));
 }
 
 .page {
     /* width: 100vw; */
-    height: calc(100vh - 91px);
+    height: calc(100vh - var(--header-height));
 
     scroll-snap-align: start;
 }
@@ -64,4 +66,24 @@ a {
 
 .button:active {
     filter: brightness(0.8);
+}
+
+@media (max-width: 950px) {
+    :root {
+        --header-height: 76px;
+    }
+}
+
+@media (max-width: 850px) {
+    :root {
+        --header-height: 85px;
+    }
+}
+
+@media (max-width: 500px) {
+    .page-content-container {
+        /* we can't guarantee every page's content can fit within the viewport on mobile; 
+           snapping would make it impossible for users to see content that isn't immediately visible in the viewport */
+        scroll-snap-type: none;
+    }
 }
