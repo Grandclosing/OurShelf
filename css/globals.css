@@ -49,6 +49,8 @@ a {
     height: calc(100vh - var(--header-height));
 
     scroll-snap-align: start;
+
+    position: relative;
 }
 
 .button {
@@ -81,6 +83,10 @@ a {
 }
 
 @media (max-width: 500px) {
+    :root {
+        --header-height: 71px;
+    }
+    
     .page-content-container {
         /* we can't guarantee every page's content can fit within the viewport on mobile; 
            snapping would make it impossible for users to see content that isn't immediately visible in the viewport */

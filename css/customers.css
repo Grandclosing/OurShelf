@@ -19,7 +19,13 @@
 .customers-view__shape-container {
     position: relative;
     background-color: transparent;
-    height: calc(100vh - var(--header-height));
+
+    /* 81px is for the 'How it works' title computed height + top */
+    height: calc(100vh - var(--header-height) - 81px); 
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
 }
 
 .customers-view__shape-container:before {
@@ -34,7 +40,6 @@
 }
 
 .customers-view__step-container {
-    position: absolute;
     text-align: left;
 }
 
@@ -63,16 +68,153 @@
 }
 
 .step-container-1 {
-    left: 15vw;
-    bottom: 9vh;
+    align-self: flex-end;
 }
 
 .step-container-2 {
-    left: 50vw;
-    top: 40vh;
-    transform: translate(-50%, -50%);
+    align-self: center;
 }
 
 .step-container-3 {
-    right: 15vw;
+    align-self: flex-start;
+}
+
+/* responsive styles */
+
+@media (max-width: 950px) {
+    .customers-view__shape-container {
+        height: calc(100vh - var(--header-height) - 61px);
+        padding: 0px 15px;
+    }
+
+    .customers-view__shape-container:before {
+        height: calc(100vh - 138px);
+    }
+
+    .step-container__label {
+        font-size: 1em;
+    }
+    
+    .step-container__sub-label {
+        font-size: 0.9em;
+    }
+    
+    .label-step {
+        font-size: 1.3em;
+    }
+}
+
+@media (max-width: 800px) {
+    .customers-view__shape-container {
+        flex-direction: column;
+    }
+
+    .customers-view__shape-container:before {
+        background-color: transparent;
+        clip-path: none;
+    }
+
+    .customers-view__step-container {
+        align-self: center;
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: center;
+        column-gap: 50px;
+    }
+
+    .step-container__text-container {
+        max-width: 200px;
+    }
+
+    .step-container__img {
+        width: 250px;
+    }
+
+    .step-container__label {
+        font-size: 1.3em;
+    }
+    
+    .step-container__sub-label {
+        font-size: 1em;
+    }
+    
+    .label-step {
+        font-size: 1.5em;
+    }
+}
+
+@media (max-width: 800px) {
+    .step-container__text-container {
+        max-width: 200px;
+    }
+
+    .step-container__img {
+        width: 200px;
+    }
+
+    .step-container__label {
+        font-size: 1em;
+    }
+    
+    .step-container__sub-label {
+        font-size: 0.9em;
+    }
+    
+    .label-step {
+        font-size: 1.3em;
+    }
+}
+
+@media (max-width: 500px) {
+    .customers-view__title {
+        font-size: 1.8em;
+        top: 0;
+        left: 0;
+        margin: 0 auto;
+        width: 90%;
+        text-align: center;
+        font-size: 1.5em;
+    }
+
+    .customers-view__shape-container {
+        margin-top: 15px;
+    }
+
+    .customers-view__step-container {
+        flex-direction: column;
+    }
+
+    .step-container__text-container {
+        max-width: 100vw;
+    }
+
+    .step-container__img {
+        width: 115px;
+    }
+
+    .step-container__label {
+        font-size: 1em;
+    }
+    
+    .step-container__sub-label {
+        font-size: 0.9em;
+    }
+    
+    .label-step {
+        font-size: 1.3em;
+    }
+}
+
+@media (max-width: 350px) {
+    .step-container__label {
+        font-size: 0.9em;
+    }
+    
+    .step-container__sub-label {
+        font-size: 0.7em;
+    }
+    
+    .label-step {
+        font-size: 1em;
+    }
 }

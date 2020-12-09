@@ -45,6 +45,10 @@ I used [GraphicSprings](https://www.graphicsprings.com/) to generate and modify 
 
 ![Customer Page Desktop](/screenshots/customers_page.png)
 
+![Customer Page Mobile 1](/screenshots/customers_page_mobile1.png)
+
+![Customer Page Mobile 2](/screenshots/customers_page_mobile2.png)
+
 ### 'For Business Owners' Page
 
 ![Business Owner Page Desktop](/screenshots/businesses_page.png)
