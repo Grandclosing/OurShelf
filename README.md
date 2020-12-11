@@ -51,8 +51,14 @@ I used [GraphicSprings](https://www.graphicsprings.com/) to generate and modify 
 
 ### 'For Business Owners' Page
 
-![Business Owner Page Desktop](/screenshots/businesses_page.png)
+![Business Owner Page Desktop](/screenshots/businesses_page.png?)
+
+![Business Owner Page Mobile Top](/screenshots/businesses_page_mobile1.png)
+
+![Business Owner Page Mobile Bottom](/screenshots/businesses_page_mobile2.png)
 
 ### Footer 
 
-![Footer](/screenshots/footer_page.png)
+![Footer Desktop](/screenshots/footer_page.png?)
+
+![Footer Mobile](/screenshots/footer_page_mobile.png)

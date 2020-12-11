@@ -1,6 +1,9 @@
 
 .footer-view {
     height: fit-content;
+    padding-top: 20vh;
+    min-height: fit-content;
+    background-image: url('../img/noise.png');
 }
 
 .footer-view__signup-container {
@@ -11,11 +14,9 @@
 
     text-align: center;
     background-color: var(--current-background-darker);
-    border-top-left-radius: 5px;
-    border-top-right-radius: 5px;
+    border-radius: 5px;
 
     border-top: 8px solid var(--current-foreground);
-    margin-top: 20vh;
 
     padding: 55px 0px;
     position: relative;
@@ -117,4 +118,72 @@
     background-color: var(--current-foreground);
     font-size: 0.8em;
     padding: 10px 0px;
+}
+
+@media (max-width: 1050px) {
+    .footer-view__signup-container {
+        width: 75%;
+    }
+
+    .footer-grid-container {
+        width: 75%;
+    }
+}
+
+@media (max-width: 800px) {
+    .footer-view__signup-container {
+        width: 90%;
+    }
+
+    .footer-grid-container {
+        width: 90%;
+    }
+}
+
+@media (max-width: 600px) {
+    .footer-view__signup-container {
+        width: 95%;
+    }
+
+    .footer-grid-container {
+        width: 95%;
+    }
+
+    .footer-view__call-to-action {
+        font-size: 1.6em;
+    }
+}
+
+@media (max-width: 500px) {
+    .footer-view {
+        padding-top: 10vh;
+    }
+
+    .footer-view__signup-container {
+        padding: 35px 0px;
+    }
+
+    .footer-view__call-to-action {
+        font-size: 1.4em;
+    }
+
+    .footer-grid-container {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .footer-grid-container__item {
+        font-size: 0.9em;
+    }
+}
+
+@media (max-width: 400px) {
+    .footer-view__button {
+        display: block;
+        width: 80%;
+        margin: 10px auto;
+    }
+
+    .footer-grid-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
 }
