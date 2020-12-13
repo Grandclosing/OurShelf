@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <title>Our Shelf</title>
+
+        <link rel="stylesheet" href="css/reset.css">
+        <link rel="stylesheet" href="css/globals.css">
+
+        <link rel="stylesheet" href="css/account.css">
+
+        <script src="js/account.js"></script>
+    </head>
+    <body>
+        <main class="page-container">
+            <img class="side-img side-img-left js-left" alt="Black man leaning" src="img/leaning.png">
+            <div class="account-container">
+                <div class="account-container__header">
+                    <img class="account-container__logo" alt="OurShelf Logo" src="img/logo-icon.png">
+
+                    <h1 class="account-container__title js-header-title"></h1>
+
+                    <hr class="divider">
+                </div>
+
+                <div class="account-container__content content">
+                    <div class="content__sign-in js-signin">
+                        <div class="input-group">
+                            <label class="input-group__label" for="signin-email">E-mail</label>
+                            <input class="input-group__text-input" type="email" id="signin-email" placeholder="janedoe@domain.com">
+                            <a class="sign-in-link" href="#">Forgot e-mail?</a>
+                        </div>
+                        
+                        <div class="input-group">
+                            <label class="input-group__label" for="signin-password">Password</label>
+                            <input class="input-group__text-input" id="signin-password" type="password">    
+                            <a class="sign-in-link" href="#">Forgot password?</a>
+                        </div>
+                        
+                        <button class="button sign-in-button">Sign In</button>
+                        <p class="content__no-account-text">No account? <a class="sign-in-link content__create-account-link" onclick="setView('signup')">Create one!</a></p>
+
+                        <hr class="divider">
+
+                        <div class="continue-button-container">
+                            <div class="button continue-button">
+                                <img class="continue-button__icon" alt="Button icon" src="img/facebook.png">
+                                <p class="continue-button__text continue-button__facebook"></p>
+                            </div>
+    
+                            <div class="button continue-button">
+                                <img class="continue-button__icon" alt="Button icon" src="img/google.png">
+                                <p class="continue-button__text continue-button__google"></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="content__sign-up js-signup">
+                        <div class="input-group">
+                            <label class="input-group__label" for="signup-full-name">Full Name</label>
+                            <input class="input-group__text-input" id="signup-full-name" type="text" placeholder="Jane Doe">
+                        </div>
+
+                        <div class="input-group">
+                            <label class="input-group__label" for="signup-email">E-mail</label>
+                            <input class="input-group__text-input" id="signup-email" type="email" placeholder="janedoe@domain.com">
+                        </div>
+
+                        <div class="input-group">
+                            <div class="showable-container">
+                                <label class="input-group__label" for="signup-password">Password</label>
+                                <div class="show-container" onmousedown="show('password')" onmouseup="hide('password')">
+                                    <img class="show-container__icon" alt="Eye icon" src="img/eye.png">
+                                    <p class="show-container__text">Show</p>
+                                </div>
+                            </div>
+                            <input class="input-group__text-input" id="signup-password" type="password">
+                        </div>
+
+                        <div class="input-group">
+                            <div class="showable-container">
+                                <label class="input-group__label" for="signup-confirm">Confirm Password</label>
+                                <div class="show-container" onmousedown="show('confirm')" onmouseup="hide('confirm')">
+                                    <img class="show-container__icon" alt="Eye icon" src="img/eye.png">
+                                    <p class="show-container__text">Show</p>
+                                </div>
+                            </div>
+                            <input class="input-group__text-input" id="signup-confirm" type="password">
+                        </div>
+
+                        <div class="check-group">
+                            <input class="check-group__input" type="checkbox" id="terms-of-service-check" value="TOS">
+                            <label class="check-group__label" for="terms-of-service-check">I agree to OurShelf's <a href="#" class="check-group__link">Terms of Service</a></label>
+                        </div>
+                        
+                        <div class="check-group">
+                            <input class="check-group__input" type="checkbox" id="privacy-check" value="Privacy">
+                            <label class="check-group__label" for="privacy-check">I agree to OurShelf's use of my data for the service and everything else described in the <a class="check-group__link" href="#">Privacy Policy</a></label>
+                        </div>
+                        
+                        <button class="button sign-up-button button--disabled">
+                            Sign Up
+                        </button>
+
+                        <p class="content__bottom-label">Already have an account? <a class="content__bottom-link" onclick="setView('signin')">Sign in</a></p>
+                    </div>
+                </div>
+            </div>
+            <img class="side-img side-img-right js-right" alt="Black woman using laptop" src="img/laptop2.png">
+        </main>
+    </body>
+</html>

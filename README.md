@@ -35,30 +35,53 @@ I used [GraphicSprings](https://www.graphicsprings.com/) to generate and modify 
 
 ## Progress
 
-### Landing Page
+### Landing Page (Desktop)
 
 ![Landing Page Desktop](/screenshots/landing_page.png)
 
+### Landing Page (Mobile)
 ![Landing Page Desktop Mobile](/screenshots/landing_page_mobile.png?)
 
-### 'For Shoppers' Page
+### 'For Shoppers' Page (Desktop)
 
-![Customer Page Desktop](/screenshots/customers_page.png)
+![Customer Page Desktop](/screenshots/customers_page.png?)
 
-![Customer Page Mobile 1](/screenshots/customers_page_mobile1.png)
+### 'For Shoppers' Page (Mobile)
 
-![Customer Page Mobile 2](/screenshots/customers_page_mobile2.png)
+![Customer Page Mobile 1](/screenshots/customers_page_mobile1.png?)
 
-### 'For Business Owners' Page
+![Customer Page Mobile 2](/screenshots/customers_page_mobile2.png??)
 
-![Business Owner Page Desktop](/screenshots/businesses_page.png?)
+### 'For Business Owners' Page (Desktop)
+
+![Business Owner Page Desktop](/screenshots/businesses_page.png??)
+
+### 'For Business Owners' Page (Mobile)
 
 ![Business Owner Page Mobile Top](/screenshots/businesses_page_mobile1.png)
 
 ![Business Owner Page Mobile Bottom](/screenshots/businesses_page_mobile2.png)
 
-### Footer 
+### Footer (Desktop)
 
-![Footer Desktop](/screenshots/footer_page.png?)
+![Footer Desktop](/screenshots/footer_page.png??)
+
+### Footer (Mobile)
 
 ![Footer Mobile](/screenshots/footer_page_mobile.png)
+
+### Sign In Page (Desktop)
+
+![Sing in Desktop](/screenshots/sign_in.png)
+
+### Sign In Page (Mobile)
+
+![Sing in Mobile](/screenshots/sign_in_mobile.png)
+
+### Sign Up Page (Desktop)
+
+![Sing up Desktop](/screenshots/sign_up.png)
+
+### Sign Up Page (Mobile)
+
+![Sing up Mobile](/screenshots/sign_up_mobile.png)
