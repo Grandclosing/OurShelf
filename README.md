@@ -80,7 +80,7 @@ I used [GraphicSprings](https://www.graphicsprings.com/) to generate and modify 
 
 ### Sign Up Page (Desktop)
 
-![Sing up Desktop](/screenshots/sign_up.png)
+![Sing up Desktop](/screenshots/sign_up.png?)
 
 ### Sign Up Page (Mobile)
 
